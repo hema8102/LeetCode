@@ -1,0 +1,11 @@
+#(leetcode problem no)1757. Recyclable and Low Fat Products
+Q:select product_id from Products where low_fats='Y'and recyclable='Y';#my solution
+#197. Rising Temperature
+Q:SELECT today.id
+FROM Weather yesterday 
+CROSS JOIN Weather today
+WHERE DATEDIFF(today.recordDate,yesterday.recordDate) = 1
+    AND today.temperature > yesterday.temperature
+;
+#1075. Project Employees I
+Q:select distinct p.project_id,round(avg(e.experience_years),2)as average_years from project p ,Employee e  where p.employee_id = e.employee_id group by project_id;
